@@ -95,7 +95,8 @@ function App() {
               <p className="text-4xl font-bold">Venue</p>
               <p className="text-2xl">UB - 704,705</p>
             </div>
-            {/* Register Now Button */}
+          </div>
+          {/* Register Now Button - Placed Below Venue */}
 <div className="mt-8 flex justify-center">
   <a
     href="https://docs.google.com/forms/d/e/1FAIpQLSffXFC6idN8cEcx-KoEj4vJgkOvKLA5PRc2ghzpyxd6sAFMDA/viewform"
@@ -106,7 +107,6 @@ function App() {
     Register Now
   </a>
 </div>
-          </div>
         </div>
       </div>
 
