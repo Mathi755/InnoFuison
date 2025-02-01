@@ -39,7 +39,7 @@ function App() {
             className="h-16" 
           />
           <img 
-            src="https://raw.githubusercontent.com/your-username/your-repo/main/dsbs-logo.png" 
+            src="https://raw.githubusercontent.com/Mathi755/InnoFuison/main/src/assets/DSBS%20Logo.png" 
             alt="DSBS Logo" 
             className="h-16" 
           />
