@@ -184,7 +184,7 @@ function App() {
             </ul>
           </div>
         </div>
-      </div>
+      
 
       {/* Prizes Section */}
       <div className="bg-blue-900 text-white py-16">
