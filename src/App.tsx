@@ -214,7 +214,7 @@ function App() {
           {[
             { name: "Riduvarshini M", phone: "90423 88725", image: "https://raw.githubusercontent.com/Mathi755/InnoFuison/main/src/assets/Ridu.jpg" },
             { name: "Gomathi Nayagam S R", phone: "8610016966", image: "https://raw.githubusercontent.com/Mathi755/InnoFuison/main/src/assets/Mathi.jpg" },
-            { name: "Guru Prasaath D", phone: "63699 51531", image: "https://raw.githubusercontent.com/Mathi755/InnoFuison/main/src/assets/GP.jpg" },
+            { name: "Guru Prasaath D", phone: "63699 51331", image: "https://raw.githubusercontent.com/Mathi755/InnoFuison/main/src/assets/GP.jpg" },
             { name: "Jonesh Linso", phone: "93456 68119", image: "https://raw.githubusercontent.com/Mathi755/InnoFuison/main/src/assets/jonesh.png" }
           ].map((coordinator, index) => (
             <div key={index} className="text-center group">
