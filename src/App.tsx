@@ -134,7 +134,7 @@ function App() {
         <div className="text-center">
           <h1 className="title-font text-4xl sm:text-6xl font-extrabold tracking-tight sm:text-7xl lg:text-8xl mb-8">
             Problem Statements
-          </h2>
+          </h1>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {[
               "Developing an advanced early warning system for a variety of natural disasters",
