@@ -196,10 +196,10 @@ function App() {
         <h2 className="title-font text-3xl font-bold text-center text-blue-900 mb-12">Event Coordinators</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {[
-            { name: "Riduvarshini M", phone: "90423 88725", image: "https://raw.githubusercontent.com/your-username/your-repo/main/coordinator.jpg" },
+            { name: "Riduvarshini M", phone: "90423 88725", image: "https://raw.githubusercontent.com/Mathi755/InnoFuison/main/src/assets/Ridu.jpg" },
             { name: "Gomathi Nayagam S R", phone: "8610016966", image: "https://raw.githubusercontent.com/Mathi755/InnoFuison/main/src/assets/Mathi.jpg" },
             { name: "Guru Prasaath D", phone: "63699 51531", image: "https://raw.githubusercontent.com/Mathi755/InnoFuison/main/src/assets/GP.jpg" },
-            { name: "Ignesh Linso", phone: "93456 68119", image: "https://raw.githubusercontent.com/your-username/your-repo/main/coordinator.jpg" }
+            { name: "Jonesh Linso", phone: "93456 68119", image: "https://raw.githubusercontent.com/your-username/your-repo/main/coordinator.jpg" }
           ].map((coordinator, index) => (
             <div key={index} className="text-center group">
               <div className="w-32 h-32 mx-auto rounded-full mb-4 overflow-hidden transform group-hover:scale-110 group-hover:-translate-y-2 transition-all duration-300 ease-in-out shadow-lg group-hover:shadow-2xl">
