@@ -48,7 +48,7 @@ function App() {
 
       {/* Hero Section with Timer */}
       <div className="bg-gradient-to-r from-blue-900 to-blue-800 text-white">
-        <div className="max-w-7xl mx-auto py-16 px-4 sm:py-24 sm:px-6 lg:px-8 text-center">
+        <div className="max-w-7xl mx-auto py-16 px-4 sm:max-w-xl sm:px-6 lg:px-8 text-center">
           <h2 className="text-2xl font-bold mb-4">
             SRM INSTITUTE OF SCIENCE AND TECHNOLOGY
             <br />
@@ -102,10 +102,12 @@ function App() {
       {/* Event Poster */}
       <div className="max-w-4xl mx-auto py-16 px-4">
         <img 
-          src="https://raw.githubusercontent.com/Mathi755/InnoFuison/main/src/assets/2.png" 
-          alt="INNOFUSION '25 Poster" 
-          className="w-full rounded-lg shadow-2xl hover:scale-105 transition-transform duration-300"
-        />
+  src="https://raw.githubusercontent.com/Mathi755/InnoFuison/main/src/assets/2.png" 
+  alt="INNOFUSION '25 Poster" 
+  className="w-full rounded-lg shadow-2xl hover:scale-105 transition-transform duration-300"
+/>
+
+
       </div>
 
       {/* Objective Section */}
@@ -119,7 +121,7 @@ function App() {
       {/* Problem Statements */}
       <div className="max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:px-8">
         <div className="text-center">
-          <h2 className="title-font text-3xl font-extrabold text-blue-900 sm:text-4xl mb-8">
+          <h1 className="title-font text-4xl sm:text-6xl font-extrabold tracking-tight sm:text-7xl lg:text-8xl mb-8">
             Problem Statements
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -197,7 +199,7 @@ function App() {
       {/* Event Coordinators */}
       <div className="max-w-7xl mx-auto py-16 px-4">
         <h2 className="title-font text-3xl font-bold text-center text-blue-900 mb-12">Event Coordinators</h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
           {[
             { name: "Riduvarshini M", phone: "90423 88725", image: "https://raw.githubusercontent.com/Mathi755/InnoFuison/main/src/assets/Ridu.jpg" },
             { name: "Gomathi Nayagam S R", phone: "8610016966", image: "https://raw.githubusercontent.com/Mathi755/InnoFuison/main/src/assets/Mathi.jpg" },
@@ -225,9 +227,9 @@ function App() {
           <h2 className="title-font text-3xl font-extrabold text-blue-900 sm:text-4xl">
             Register Now
           </h2>
-          <p className="mt-4 text-lg text-gray-600 mb-8">
-            Register your team for INNOFUSION '25
-          </p>
+          <p className="mt-4 text-sm sm:text-lg text-gray-600 mb-8">Register your team for INNOFUSION '25</p>
+
+
           <a
             href="https://docs.google.com/forms/d/e/1FAIpQLSffXFC6idN8cEcx-KoEj4vJgkOvKLA5PRc2ghzpyxd6sAFMDA/viewform"
             target="_blank"
@@ -241,15 +243,15 @@ function App() {
 
       {/* Footer */}
       <footer className="bg-blue-900 text-white">
-        <div className="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
-          <div className="text-center">
-            <h3 className="text-lg font-semibold">Contact Us</h3>
-            <p className="mt-2">Department of Data Science and Business Systems</p>
-            <p>SRM Institute of Science and Technology</p>
-            <p className="mt-4 text-gray-400">© 2025 DSBS Student Association. All rights reserved.</p>
-          </div>
-        </div>
-      </footer>
+  <div className="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8 text-center">
+    <div className="space-y-4">
+      <h3 className="text-lg font-semibold">Contact Us</h3>
+      <p className="text-sm">Department of Data Science and Business Systems</p>
+      <p className="text-sm">SRM Institute of Science and Technology</p>
+      <p className="mt-4 text-gray-400">© 2025 DSBS Student Association. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
     </div>
   )
 }
