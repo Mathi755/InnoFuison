@@ -56,12 +56,12 @@ function App() {
             <br />
             DEPARTMENT OF DATA SCIENCE AND BUSINESS SYSTEMS
           </h2>
-          <h1 className="title-font text-6xl font-extrabold tracking-tight sm:text-7xl lg:text-8xl mb-8 text-yellow-400">
-            INNOFUSION
+          <h1 className="title-font text-6xl font-extrabold tracking-tight sm:text-7xl lg:text-8xl mb-8">
+            <span className="inline-block text-yellow-400">INNOFUSION</span>
+            <span className="inline-block text-red-600"> '25</span>
           </h1>
-          <h1 className="title-font text-6xl font-extrabold tracking-tight sm:text-7xl lg:text-8xl mb-8 text-red-400">
-             '25
-          </h1>
+
+
           <p className="mt-6 text-xl max-w-2xl mx-auto">
             Organized by DSBS STUDENT ASSOCIATION
           </p>
