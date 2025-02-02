@@ -47,6 +47,15 @@ const App: React.FC = () => {
     return () => clearInterval(timer);
   }, []);
 
+  const Convenors: Convenor[] = [
+  {
+    name: "Dr. Kavitha V",
+    phone: "90423 98725",
+    image: "https://raw.githubusercontent.com/Mathi755/InnoFuison/main/src/assets/kavitha.jpg"
+  }
+    
+];
+  
   const coordinators: Coordinator[] = [
   {
     name: "Riduvarshini M",
@@ -71,14 +80,7 @@ const App: React.FC = () => {
     
 ];
 
-    const Convenors: Convenor[] = [
-  {
-    name: "Dr. Kavitha V",
-    phone: "90423 98725",
-    image: "https://raw.githubusercontent.com/Mathi755/InnoFuison/main/src/assets/kavitha.jpg"
-  }
     
-];
 
 
 
