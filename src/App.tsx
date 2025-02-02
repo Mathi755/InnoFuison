@@ -278,29 +278,31 @@ const App: React.FC = () => {
         </div>
       </div>
 
-      {/* Convenors  */}
-      <div className="max-w-7xl mx-auto py-16 px-4">
-        <h2 className="title-font text-3xl font-bold text-center text-blue-900 mb-12">
-          Convenor
-        </h2>
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
-          {Convenors.map((Convenor, index) => (
-            <div key={index} className="text-center group">
-              <div className="w-32 h-32 mx-auto rounded-full mb-4 overflow-hidden transform group-hover:scale-110 group-hover:-translate-y-2 transition-all duration-300 ease-in-out shadow-lg group-hover:shadow-2xl">
-                <img
-                  src={Convenor.image}
-                  alt={Convenor.name}
-                  className="w-full h-full object-cover"
-                />
-              </div>
-              <h3 className="font-bold text-lg group-hover:text-blue-600 transition-colors duration-300">
-                {Convenor.name}
-              </h3>
-              <p className="text-gray-600">{Convenor.phone}</p>
-            </div>
-          ))}
+     {/* Convenors */}
+<div className="max-w-7xl mx-auto py-16 px-4 flex flex-col items-center">
+  <h2 className="title-font text-3xl font-bold text-center text-blue-900 mb-12">
+    Convenor
+  </h2>
+  <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 justify-center">
+    {Convenors.map((Convenor, index) => (
+      <div key={index} className="text-center group flex flex-col items-center">
+        <div className="w-32 h-32 rounded-full mb-4 overflow-hidden transform group-hover:scale-110 group-hover:-translate-y-2 transition-all duration-300 ease-in-out shadow-lg group-hover:shadow-2xl">
+          <img
+            src={Convenor.image}
+            alt={Convenor.name}
+            className="w-full h-full object-cover"
+          />
         </div>
+        <h3 className="font-bold text-lg group-hover:text-blue-600 transition-colors duration-300">
+          {Convenor.name}
+        </h3>
+        <p className="text-gray-600">{Convenor.phone}</p>
       </div>
+    ))}
+  </div>
+</div>
+
+
 
 
       {/* Event Coordinators */}
