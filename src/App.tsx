@@ -42,27 +42,29 @@ const App: React.FC = () => {
   }, []);
 
   const coordinators: Coordinator[] = [
-    {
-      name: "Riduvarshini M",
-      phone: "90423 98725",
-      image: "/api/placeholder/400/320"
-    },
-    {
-      name: "Gomathi Nayagam S R",
-      phone: "8610016966",
-      image: "/api/placeholder/400/320"
-    },
-    {
-      name: "Guru Prasaath D",
-      phone: "63699 51331",
-      image: "/api/placeholder/400/320"
-    },
-    {
-      name: "Jonesh Linso",
-      phone: "93456 68119",
-      image: "/api/placeholder/400/320"
-    }
-  ];
+  {
+    name: "Riduvarshini M",
+    phone: "90423 98725",
+    image: "https://raw.githubusercontent.com/Mathi755/InnoFuison/main/src/assets/Ridu.jpg"
+  },
+  {
+    name: "Gomathi Nayagam S R",
+    phone: "8610016966",
+    image: "https://raw.githubusercontent.com/Mathi755/InnoFuison/main/src/assets/Mathi.jpg"
+  },
+  {
+    name: "Guru Prasaath D",
+    phone: "63699 51331",
+    image: "https://raw.githubusercontent.com/Mathi755/InnoFuison/main/src/assets/GP.jpg"
+  },
+  {
+    name: "Jonesh Linso",
+    phone: "93456 68119",
+    image: "https://raw.githubusercontent.com/Mathi755/InnoFuison/main/src/assets/jonesh.png"
+  }
+];
+
+
 
   const problemStatements: string[] = [
     "Developing an advanced early warning system for a variety of natural disasters",
