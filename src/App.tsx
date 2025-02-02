@@ -64,22 +64,22 @@ const App: React.FC = () => {
 
   const coConvenors: coConvenor[] = [
   {
-    name: "Riduvarshini M",
+    name: "Dr. R.Anita Jasmine",
     phone: "90423 98725",
     image: "https://raw.githubusercontent.com/Mathi755/InnoFuison/main/src/assets/Ridu.jpg"
   },
   {
-    name: "Gomathi Nayagam S R",
+    name: "Dr. T. Karthick",
     phone: "8610016966",
     image: "https://raw.githubusercontent.com/Mathi755/InnoFuison/main/src/assets/Mathi.jpg"
   },
   {
-    name: "Guru Prasaath D",
+    name: "Dr. Jayaraj R",
     phone: "63699 51331",
     image: "https://raw.githubusercontent.com/Mathi755/InnoFuison/main/src/assets/GP.jpg"
   },
   {
-    name: "Jonesh Linso",
+    name: "Dr.J.Jeba Sonia",
     phone: "93456 68119",
     image: "https://raw.githubusercontent.com/Mathi755/InnoFuison/main/src/assets/jonesh.jpg"
   }
