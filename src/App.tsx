@@ -63,11 +63,7 @@ const App: React.FC = () => {
 ];
 
   const coConvenors: coConvenor[] = [
-  {
-    name: "Dr. R.Anita Jasmine",
-    phone: "anitajar1@srmist.edu.in",
-    image: "https://raw.githubusercontent.com/Mathi755/InnoFuison/main/src/assets/anita.jpg"
-  },
+
   {
     name: "Dr. T. Karthick",
     phone: "karthict@srmist.edu.in",
@@ -82,6 +78,11 @@ const App: React.FC = () => {
     name: "Dr.J.Jeba Sonia",
     phone: "jebas@srmist.edu.in",
     image: "https://raw.githubusercontent.com/Mathi755/InnoFuison/main/src/assets/jeba.jpg"
+  }, 
+    {
+    name: "Dr. R.Anita Jasmine",
+    phone: "anitajar1@srmist.edu.in",
+    image: "https://raw.githubusercontent.com/Mathi755/InnoFuison/main/src/assets/anita.jpg"
   }
     
 ];
