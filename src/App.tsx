@@ -221,7 +221,7 @@ const App: React.FC = () => {
           <div>
             <h3 className="text-xl font-bold mb-4">Team Composition</h3>
             <ul className="list-disc pl-5 space-y-2">
-              <li>Each team can have 1 to 4 members</li>
+              <li>Each team can have 2 to 4 members</li>
               <li>All team members must be enrolled in an UG or PG engineering program</li>
               <li>Interdisciplinary teams are encouraged, but not mandatory</li>
               <li>Teams must register by 9:00 AM on the event date</li>
