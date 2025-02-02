@@ -1,7 +1,20 @@
-import { useState, useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 
-function App() {
-  const [timeLeft, setTimeLeft] = useState({
+interface TimeLeft {
+  days: number;
+  hours: number;
+  minutes: number;
+  seconds: number;
+}
+
+interface Coordinator {
+  name: string;
+  phone: string;
+  image: string;
+}
+
+const App: React.FC = () => {
+  const [timeLeft, setTimeLeft] = useState<TimeLeft>({
     days: 0,
     hours: 0,
     minutes: 0,
@@ -28,18 +41,58 @@ function App() {
     return () => clearInterval(timer);
   }, []);
 
+  const coordinators: Coordinator[] = [
+    {
+      name: "Riduvarshini M",
+      phone: "90423 98725",
+      image: "/api/placeholder/400/320"
+    },
+    {
+      name: "Gomathi Nayagam S R",
+      phone: "8610016966",
+      image: "/api/placeholder/400/320"
+    },
+    {
+      name: "Guru Prasaath D",
+      phone: "63699 51331",
+      image: "/api/placeholder/400/320"
+    },
+    {
+      name: "Jonesh Linso",
+      phone: "93456 68119",
+      image: "/api/placeholder/400/320"
+    }
+  ];
+
+  const problemStatements: string[] = [
+    "Developing an advanced early warning system for a variety of natural disasters",
+    "Enhancing CAPTCHA security using artificial intelligence models for improved bot resistance",
+    "Implementing AI-driven chatbots or generative solutions for personalized assistance to elderly individuals",
+    "Using IoT technology for real-time health monitoring of electric vehicles",
+    "Managing railway wagons efficiently with smart IoT-based systems",
+    "Identifying end users involved in social media scams through blockchain solutions",
+    "Utilizing technology to track and monitor the movements of ex-convicts effectively",
+    "Voice-Controlled Gaming Tools for Enhanced Learning in the Skill Ecosystem",
+    "Smart Automation",
+    "Smart education",
+    "Smart Irrigation",
+    "Precision Agriculture",
+    "Smart Electricity",
+    "Open problem statements in SDG Goals"
+  ];
+
   return (
     <div className="min-h-screen bg-yellow-400">
       {/* Header with Logos */}
       <div className="bg-white py-4">
         <div className="max-w-7xl mx-auto px-4 flex justify-between items-center">
           <img
-            src="https://raw.githubusercontent.com/Mathi755/InnoFuison/main/src/assets/SRM%20Logo.jpeg"
+            src="/api/placeholder/400/320"
             alt="SRM Logo"
             className="h-16"
           />
           <img
-            src="https://raw.githubusercontent.com/Mathi755/InnoFuison/main/src/assets/DSBS%20Logo.png"
+            src="/api/placeholder/400/320"
             alt="DSBS Logo"
             className="h-16"
           />
@@ -57,7 +110,7 @@ function App() {
             DEPARTMENT OF DATA SCIENCE AND BUSINESS SYSTEMS
           </h2>
           <h1 className="title-font text-6xl font-extrabold tracking-tight sm:text-7xl lg:text-8xl mb-8">
-            <span className="inline-block text-yellow-400">INNOFUSION '</span>
+            <span className="inline-block text-yellow-400">INNOFUSION &apos;</span>
             <span className="inline-block text-red-600">25</span>
           </h1>
           <p className="mt-6 text-xl max-w-2xl mx-auto">
@@ -98,9 +151,7 @@ function App() {
           {/* Register Now Button */}
           <div className="mt-8 flex justify-center">
             <a
-              href="https://docs.google.com/forms/d/e/1FAIpQLSffXFC6idN8cEcx-KoEj4vJgkOvKLA5PRc2ghzpyxd6sAFMDA/viewform"
-              target="_blank"
-              rel="noopener noreferrer"
+              href="#register"
               className="inline-block bg-blue-600 text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-blue-700 transform hover:scale-105 transition-all duration-300"
             >
               Register Now
@@ -112,13 +163,12 @@ function App() {
       {/* Event Poster */}
       <div className="max-w-4xl mx-auto py-16 px-4">
         <img
-          src="https://raw.githubusercontent.com/Mathi755/InnoFuison/main/src/assets/2.png"
+          src="/api/placeholder/400/320"
           alt="INNOFUSION '25 Poster"
           className="w-full rounded-lg shadow-2xl hover:scale-105 transition-transform duration-300"
         />
       </div>
 
-      {/* Rest of the sections... */}
       {/* Objective Section */}
       <div className="max-w-7xl mx-auto py-16 px-4 bg-white rounded-lg shadow-lg my-16">
         <h2 className="title-font text-3xl font-extrabold text-blue-900 text-center mb-8">
@@ -134,26 +184,11 @@ function App() {
       {/* Problem Statements */}
       <div className="max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:px-8">
         <div className="text-center">
-          <h1 className="title-font text-4xl sm:text-6xl font-extrabold tracking-tight sm:text-7xl lg:text-8xl mb-8">
+          <h2 className="title-font text-4xl font-extrabold tracking-tight mb-8">
             Problem Statements
-          </h1>
+          </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            {[
-              "Developing an advanced early warning system for a variety of natural disasters",
-              "Enhancing CAPTCHA security using artificial intelligence models for improved bot resistance",
-              "Implementing AI-driven chatbots or generative solutions for personalized assistance to elderly individuals",
-              "Using IoT technology for real-time health monitoring of electric vehicles",
-              "Managing railway wagons efficiently with smart IoT-based systems",
-              "Identifying end users involved in social media scams through blockchain solutions",
-              "Utilizing technology to track and monitor the movements of ex-convicts effectively",
-              "Voice-Controlled Gaming Tools for Enhanced Learning in the Skill Ecosystem",
-              "Smart Automation",
-              "Smart education",
-              "Smart Irrigation",
-              "Precision Agriculture",
-              "Smart Electricity",
-              "Open problem statements in SDG Goals",
-            ].map((problem, index) => (
+            {problemStatements.map((problem, index) => (
               <div
                 key={index}
                 className="p-6 bg-white rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300"
@@ -220,28 +255,7 @@ function App() {
           Event Coordinators
         </h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
-          {[
-            {
-              name: "Riduvarshini M",
-              phone: "90423 98725",
-              image: "https://raw.githubusercontent.com/Mathi755/InnoFuison/main/src/assets/Ridu.jpg",
-            },
-            {
-              name: "Gomathi Nayagam S R",
-              phone: "8610016966",
-              image: "https://raw.githubusercontent.com/Mathi755/InnoFuison/main/src/assets/Mathi.jpg",
-            },
-            {
-              name: "Guru Prasaath D",
-              phone: "63699 51331",
-              image: "https://raw.githubusercontent.com/Mathi755/InnoFuison/main/src/assets/GP.jpg",
-            },
-            {
-              name: "Jonesh Linso",
-              phone: "93456 68119",
-              image: "https://raw.githubusercontent.com/Mathi755/InnoFuison/main/src/assets/jonesh.png",
-            },
-          ].map((coordinator, index) => (
+          {coordinators.map((coordinator, index) => (
             <div key={index} className="text-center group">
               <div className="w-32 h-32 mx-auto rounded-full mb-4 overflow-hidden transform group-hover:scale-110 group-hover:-translate-y-2 transition-all duration-300 ease-in-out shadow-lg group-hover:shadow-2xl">
                 <img
@@ -260,13 +274,13 @@ function App() {
       </div>
 
       {/* Registration Section */}
-      <div className="max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:px-8 bg-white">
+      <div id="register" className="max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:px-8 bg-white">
         <div className="text-center mb-12">
           <h2 className="title-font text-3xl font-extrabold text-blue-900 sm:text-4xl">
             Register Now
           </h2>
           <p className="mt-4 text-sm sm:text-lg text-gray-600 mb-8">
-            Register your team for INNOFUSION '25
+            Register your team for INNOFUSION &apos;25
           </p>
           <a
             href="https://docs.google.com/forms/d/e/1FAIpQLSffXFC6idN8cEcx-KoEj4vJgkOvKLA5PRc2ghzpyxd6sAFMDA/viewform"
@@ -287,13 +301,13 @@ function App() {
             <p className="text-sm">Department of Data Science and Business Systems</p>
             <p className="text-sm">SRM Institute of Science and Technology</p>
             <p className="mt-4 text-gray-400">
-                © 2025 DSBS Student Association. All rights reserved.
-              </p>
-            </div>
+              © 2025 DSBS Student Association. All rights reserved.
+            </p>
           </div>
-        </footer>
-      
+        </div>
+      </footer>
+    </div>
   );
-}
+};
 
 export default App;
