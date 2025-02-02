@@ -158,7 +158,7 @@ const App: React.FC = () => {
 <div className="bg-gradient-to-r from-blue-900 to-blue-800 text-white">
   <div className="max-w-7xl mx-auto py-16 px-4 sm:max-w-xl sm:px-6 lg:px-8 text-center">
     <h2 className="text-2xl font-bold mb-4">
-      MRS INSTITUTE OF SCIENCE AND TECHNOLOGY
+      SRM INSTITUTE OF SCIENCE AND TECHNOLOGY
       <br />
       SCHOOL OF COMPUTING
       <br />
