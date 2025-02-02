@@ -347,7 +347,11 @@ const App: React.FC = () => {
       <div
         key={index}
         className="text-center group flex flex-col items-center"
-        onClick={() => window.open(coConvenor.url, "_blank")} // Use `url` from coConvenor object
+        onClick={() => {
+  console.log("Redirecting to:", coConvenor.url);  // Logs the URL to console
+  window.open(coConvenor.url, "_blank");  // Open the URL in a new tab
+}}
+ // Use `url` from coConvenor object
       >
         <div className="w-32 h-32 rounded-full mb-4 overflow-hidden transform group-hover:scale-110 group-hover:-translate-y-2 transition-all duration-300 ease-in-out shadow-lg group-hover:shadow-2xl">
           <img
