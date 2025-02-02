@@ -73,9 +73,9 @@ const App: React.FC = () => {
 
     const Convenors: Convenor[] = [
   {
-    name: "Riduvarshini M",
+    name: "Dr. Kavitha V",
     phone: "90423 98725",
-    image: "https://raw.githubusercontent.com/Mathi755/InnoFuison/main/src/assets/Ridu.jpg"
+    image: "https://raw.githubusercontent.com/Mathi755/InnoFuison/main/InnoFuison/src/assets/kavitha.jpg"
   },
   {
     name: "Gomathi Nayagam S R",
