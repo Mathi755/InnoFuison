@@ -62,6 +62,12 @@ const App: React.FC = () => {
     phone: "93456 68119",
     image: "https://raw.githubusercontent.com/Mathi755/InnoFuison/main/src/assets/jonesh.png"
   }
+    ,
+  {
+    name: "Parneet Kaur",
+    phone: "93456 68119",
+    image: "https://raw.githubusercontent.com/Mathi755/InnoFuison/main/src/assets/jonesh.png"
+  }
 ];
 
 
