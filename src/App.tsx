@@ -124,7 +124,9 @@ function App() {
           Objective
         </h2>
         <p className="text-lg text-center max-w-3xl mx-auto">
-          To foster innovation and creativity in Artificial Intelligence among Engineering students by solving real-world problems within a competitive yet collaborative environment.
+          To foster innovation and creativity in Artificial Intelligence among Engineering
+          students by solving real-world problems within a competitive yet collaborative
+          environment.
         </p>
       </div>
 
@@ -162,7 +164,7 @@ function App() {
         </div>
       </div>
 
-      {/* Rules and Guidelines + Subsequent Sections */}
+      {/* Rules and Guidelines */}
       <div className="max-w-7xl mx-auto py-16 px-4 bg-white rounded-lg shadow-lg my-16">
         <h2 className="title-font text-3xl font-extrabold text-blue-900 text-center mb-8">
           Rules and Guidelines
@@ -190,7 +192,7 @@ function App() {
         </div>
 
         {/* Prizes Section */}
-        <div className="bg-blue-900 text-white py-16 mt-16">
+        <div className="bg-blue-900 text-white py-16">
           <div className="max-w-7xl mx-auto px-4">
             <h2 className="title-font text-3xl font-bold text-center mb-8">Prizes</h2>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -218,28 +220,28 @@ function App() {
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
             {[
               {
-                name: 'Riduvarshini M',
-                phone: '90423 98725',
+                name: "Riduvarshini M",
+                phone: "90423 98725",
                 image:
-                  'https://raw.githubusercontent.com/Mathi755/InnoFuison/main/src/assets/Ridu.jpg',
+                  "https://raw.githubusercontent.com/Mathi755/InnoFuison/main/src/assets/Ridu.jpg",
               },
               {
-                name: 'Gomathi Nayagam S R',
-                phone: '8610016966',
+                name: "Gomathi Nayagam S R",
+                phone: "8610016966",
                 image:
-                  'https://raw.githubusercontent.com/Mathi755/InnoFuison/main/src/assets/Mathi.jpg',
+                  "https://raw.githubusercontent.com/Mathi755/InnoFuison/main/src/assets/Mathi.jpg",
               },
               {
-                name: 'Guru Prasaath D',
-                phone: '63699 51331',
+                name: "Guru Prasaath D",
+                phone: "63699 51331",
                 image:
-                  'https://raw.githubusercontent.com/Mathi755/InnoFuison/main/src/assets/GP.jpg',
+                  "https://raw.githubusercontent.com/Mathi755/InnoFuison/main/src/assets/GP.jpg",
               },
               {
-                name: 'Jonesh Linso',
-                phone: '93456 68119',
+                name: "Jonesh Linso",
+                phone: "93456 68119",
                 image:
-                  'https://raw.githubusercontent.com/Mathi755/InnoFuison/main/src/assets/jonesh.png',
+                  "https://raw.githubusercontent.com/Mathi755/InnoFuison/main/src/assets/jonesh.png",
               },
             ].map((coordinator, index) => (
               <div key={index} className="text-center group">
@@ -284,9 +286,7 @@ function App() {
           <div className="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8 text-center">
             <div className="space-y-4">
               <h3 className="text-lg font-semibold">Contact Us</h3>
-              <p className="text-sm">
-                Department of Data Science and Business Systems
-              </p>
+              <p className="text-sm">Department of Data Science and Business Systems</p>
               <p className="text-sm">SRM Institute of Science and Technology</p>
               <p className="mt-4 text-gray-400">
                 © 2025 DSBS Student Association. All rights reserved.
@@ -294,8 +294,7 @@ function App() {
             </div>
           </div>
         </footer>
-      </div>
-    </div>
+      </div> {/* This closes the main wrapper div */}
   );
 }
 
