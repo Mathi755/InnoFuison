@@ -105,70 +105,67 @@ const App: React.FC = () => {
 
 
       {/* Hero Section with Timer */}
-      <div className="bg-gradient-to-r from-blue-900 to-blue-800 text-white">
-        <div className="max-w-7xl mx-auto py-16 px-4 sm:max-w-xl sm:px-6 lg:px-8 text-center">
-          <h2 className="text-2xl font-bold mb-4">
-            SRM INSTITUTE OF SCIENCE AND TECHNOLOGY
-            <br />
-            SCHOOL OF COMPUTING
-            <br />
-            DEPARTMENT OF DATA SCIENCE AND BUSINESS SYSTEMS
-          </h2>
-          <h1 className="title-font text-4xl font-extrabold tracking-widest sm:text-4xl lg:text-8xl mb-8 whitespace-nowrap text-center">
-  <span className="text-yellow-400">INNOFUSION</span> <br />
-  <span className="text-white">&nbsp;'</span>
-  <span className="text-red-600">25</span>
-</h1>
+<div className="bg-gradient-to-r from-blue-900 to-blue-800 text-white">
+  <div className="max-w-7xl mx-auto py-16 px-4 sm:max-w-xl sm:px-6 lg:px-8 text-center">
+    <h2 className="text-2xl font-bold mb-4">
+      SRM INSTITUTE OF SCIENCE AND TECHNOLOGY
+      <br />
+      SCHOOL OF COMPUTING
+      <br />
+      DEPARTMENT OF DATA SCIENCE AND BUSINESS SYSTEMS
+    </h2>
+    <h1 className="title-font text-4xl font-extrabold tracking-widest sm:text-4xl lg:text-8xl mb-8 whitespace-nowrap mx-auto">
+      <span className="text-yellow-400">INNOFUSION</span> <br />
+      <span className="text-white">&nbsp;' </span>
+      <span className="text-red-600">25</span>
+    </h1>
+    <p className="mt-6 text-xl max-w-2xl mx-auto">
+      Organized by DSBS STUDENT ASSOCIATION
+    </p>
 
-
-
-
-          <p className="mt-6 text-xl max-w-2xl mx-auto">
-            Organized by DSBS STUDENT ASSOCIATION
-          </p>
-
-          {/* Countdown Timer */}
-          <div className="mt-12 grid grid-cols-4 gap-4 max-w-2xl mx-auto">
-            <div className="bg-blue-800 p-4 rounded-lg">
-              <div className="text-4xl font-bold">{timeLeft.days}</div>
-              <div className="text-sm">Days</div>
-            </div>
-            <div className="bg-blue-800 p-4 rounded-lg">
-              <div className="text-4xl font-bold">{timeLeft.hours}</div>
-              <div className="text-sm">Hours</div>
-            </div>
-            <div className="bg-blue-800 p-4 rounded-lg">
-              <div className="text-4xl font-bold">{timeLeft.minutes}</div>
-              <div className="text-sm">Minutes</div>
-            </div>
-            <div className="bg-blue-800 p-4 rounded-lg">
-              <div className="text-4xl font-bold">{timeLeft.seconds}</div>
-              <div className="text-sm">Seconds</div>
-            </div>
-          </div>
-
-          <div className="mt-8 flex justify-center space-x-8">
-            <div className="text-center">
-              <p className="text-4xl font-bold">February</p>
-              <p className="text-2xl">10th, 2025</p>
-            </div>
-            <div className="text-center">
-              <p className="text-4xl font-bold">Venue</p>
-              <p className="text-2xl">UB - 704,705</p>
-            </div>
-          </div>
-
-          {/* Register Now Button */}
-          <div className="mt-8 flex justify-center">
-            <a
-              href="#register"
-              className="inline-block bg-blue-600 text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-blue-700 transform hover:scale-105 transition-all duration-300"
-            >
-              Register Now
-            </a>
-          </div>
-        </div>
+    {/* Countdown Timer */}
+    <div className="mt-12 grid grid-cols-4 gap-4 max-w-2xl mx-auto">
+      <div className="bg-blue-800 p-4 rounded-lg">
+        <div className="text-4xl font-bold">{timeLeft.days}</div>
+        <div className="text-sm">Days</div>
       </div>
+      <div className="bg-blue-800 p-4 rounded-lg">
+        <div className="text-4xl font-bold">{timeLeft.hours}</div>
+        <div className="text-sm">Hours</div>
+      </div>
+      <div className="bg-blue-800 p-4 rounded-lg">
+        <div className="text-4xl font-bold">{timeLeft.minutes}</div>
+        <div className="text-sm">Minutes</div>
+      </div>
+      <div className="bg-blue-800 p-4 rounded-lg">
+        <div className="text-4xl font-bold">{timeLeft.seconds}</div>
+        <div className="text-sm">Seconds</div>
+      </div>
+    </div>
+
+    <div className="mt-8 flex justify-center space-x-8">
+      <div className="text-center">
+        <p className="text-4xl font-bold">February</p>
+        <p className="text-2xl">10th, 2025</p>
+      </div>
+      <div className="text-center">
+        <p className="text-4xl font-bold">Venue</p>
+        <p className="text-2xl">UB - 704,705</p>
+      </div>
+    </div>
+
+    {/* Register Now Button */}
+    <div className="mt-8 flex justify-center">
+      <a
+        href="#register"
+        className="inline-block bg-blue-600 text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-blue-700 transform hover:scale-105 transition-all duration-300"
+      >
+        Register Now
+      </a>
+    </div>
+  </div>
+</div>
+
 
       {/* Event Poster */}
       <div className="max-w-4xl mx-auto py-16 px-4">
