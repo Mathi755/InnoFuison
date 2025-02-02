@@ -75,7 +75,7 @@ const App: React.FC = () => {
   {
     name: "Jonesh Linso",
     phone: "93456 68119",
-    image: "https://raw.githubusercontent.com/Mathi755/InnoFuison/main/src/assets/jonesh.png"
+    image: "https://raw.githubusercontent.com/Mathi755/InnoFuison/main/src/assets/jonesh.jpg"
   }
     
 ];
