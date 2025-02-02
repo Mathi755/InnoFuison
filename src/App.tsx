@@ -337,7 +337,7 @@ const App: React.FC = () => {
   <h2 className="title-font text-3xl font-bold text-center text-blue-900 mb-12">
     coConvenors
   </h2>
-  <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-1 gap-8 justify-center">
+  <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 justify-center">
     {coConvenors.map((coConvenor, index) => (
       <div key={index} className="text-center group flex flex-col items-center">
         <div className="w-32 h-32 rounded-full mb-4 overflow-hidden transform group-hover:scale-110 group-hover:-translate-y-2 transition-all duration-300 ease-in-out shadow-lg group-hover:shadow-2xl">
