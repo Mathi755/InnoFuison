@@ -88,19 +88,21 @@ const App: React.FC = () => {
     <div className="min-h-screen bg-yellow-400">
       {/* Header with Logos */}
       <div className="bg-white py-4">
-        <div className="max-w-7xl mx-auto px-4 flex justify-between items-center">
-          <img
-            src="/api/placeholder/400/320"
-            alt="SRM Logo"
-            className="h-16"
-          />
-          <img
-            src="/api/placeholder/400/320"
-            alt="DSBS Logo"
-            className="h-16"
-          />
-        </div>
-      </div>
+  <div className="max-w-7xl mx-auto px-4 flex justify-between items-center">
+    <img
+      src="https://raw.githubusercontent.com/Mathi755/InnoFuison/main/src/assets/SRM%20Logo.jpeg"
+      alt="SRM Logo"
+      className="h-16"
+    />
+    <img
+      src="https://raw.githubusercontent.com/Mathi755/InnoFuison/main/src/assets/DSBS%20Logo.png"
+      alt="DSBS Logo"
+      className="h-16"
+    />
+  </div>
+</div>
+
+
 
       {/* Hero Section with Timer */}
       <div className="bg-gradient-to-r from-blue-900 to-blue-800 text-white">
