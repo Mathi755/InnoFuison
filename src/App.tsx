@@ -315,7 +315,7 @@ const App: React.FC = () => {
         </div>
       </div>
 
-      {/* Convenors Coordinators */}
+      {/* Convenors  */}
       <div className="max-w-7xl mx-auto py-16 px-4">
         <h2 className="title-font text-3xl font-bold text-center text-blue-900 mb-12">
           Convenor
