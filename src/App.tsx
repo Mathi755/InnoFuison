@@ -114,13 +114,14 @@ const App: React.FC = () => {
       <br />
       DEPARTMENT OF DATA SCIENCE AND BUSINESS SYSTEMS
     </h2>
-<div className="flex flex-col items-center justify-center h-auto px-4 text-center gap-y-2">
-  <h1 className="title-font text-2xl font-extrabold tracking-widest sm:text-4xl lg:text-8xl leading-tight">
-    <span className="text-yellow-400">INNOFUSION</span>  
-    <span className="text-white">'</span>
-    <span className="text-red-600">25</span>
-  </h1>
+<div className="flex flex-col items-center justify-center h-[10vh] px-4 text-center gap-y-2">   
+  <h1 className="title-font text-2xl font-extrabold tracking-widest sm:text-4xl lg:text-8xl leading-tight">     
+    <span className="text-yellow-400">INNOFUSION</span>       
+    <span className="text-white">'</span>     
+    <span className="text-red-600">25</span>   
+  </h1> 
 </div>
+
     <p className="mt-6 text-xl max-w-2xl mx-auto">
       Organized by DSBS STUDENT ASSOCIATION
     </p>
