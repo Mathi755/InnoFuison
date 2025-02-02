@@ -62,30 +62,34 @@ const App: React.FC = () => {
     
 ];
 
-  const coConvenors: coConvenor[] = [
-
+ const coConvenors: coConvenor[] = [
   {
     name: "Dr. T. Karthick",
     phone: "karthict@srmist.edu.in",
-    image: "https://raw.githubusercontent.com/Mathi755/InnoFuison/main/src/assets/karthik.jpg"
+    image: "https://raw.githubusercontent.com/Mathi755/InnoFuison/main/src/assets/karthik.jpg",
+    url: "https://www.srmist.edu.in/faculty/dr-t-karthick/" // URL for Dr. T. Karthick
   },
   {
     name: "Dr. Jayaraj R",
     phone: "jayarajr1@srmist.edu.in",
-    image: "https://raw.githubusercontent.com/Mathi755/InnoFuison/main/src/assets/jeyaraj.jpg"
+    image: "https://raw.githubusercontent.com/Mathi755/InnoFuison/main/src/assets/jeyaraj.jpg",
+    url: "https://www.srmist.edu.in/faculty/dr-r-jayaraj/" // URL for Dr. Jayaraj R
   },
   {
     name: "Dr.J.Jeba Sonia",
     phone: "jebas@srmist.edu.in",
-    image: "https://raw.githubusercontent.com/Mathi755/InnoFuison/main/src/assets/jeba.jpg"
-  }, 
-    {
+    image: "https://raw.githubusercontent.com/Mathi755/InnoFuison/main/src/assets/jeba.jpg",
+    url: "https://www.srmist.edu.in/faculty/dr-j-jeba-sonia/" // URL for Dr. J.Jeba Sonia
+  },
+  {
     name: "Dr. R.Anita Jasmine",
     phone: "anitajar1@srmist.edu.in",
-    image: "https://raw.githubusercontent.com/Mathi755/InnoFuison/main/src/assets/anita.jpg"
+    image: "https://raw.githubusercontent.com/Mathi755/InnoFuison/main/src/assets/anita.jpg",
+    url: "https://www.srmist.edu.in/faculty/dr-r-anita-jasmine/" // URL for Dr. R.Anita Jasmine
   }
-    
 ];
+
+
   
   const coordinators: Coordinator[] = [
   {
@@ -340,7 +344,11 @@ const App: React.FC = () => {
   </h2>
   <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 justify-center">
     {coConvenors.map((coConvenor, index) => (
-      <div key={index} className="text-center group flex flex-col items-center">
+      <div
+        key={index}
+        className="text-center group flex flex-col items-center"
+        onClick={() => window.open(coConvenor.url, "_blank")} // Use `url` from coConvenor object
+      >
         <div className="w-32 h-32 rounded-full mb-4 overflow-hidden transform group-hover:scale-110 group-hover:-translate-y-2 transition-all duration-300 ease-in-out shadow-lg group-hover:shadow-2xl">
           <img
             src={coConvenor.image}
@@ -356,6 +364,7 @@ const App: React.FC = () => {
     ))}
   </div>
 </div>
+
 
 
       {/* Event Coordinators */}
