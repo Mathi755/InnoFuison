@@ -114,7 +114,7 @@ const App: React.FC = () => {
             <br />
             DEPARTMENT OF DATA SCIENCE AND BUSINESS SYSTEMS
           </h2>
-          <h1 className="title-font text-6xl font-extrabold tracking-widest sm:text-7xl lg:text-8xl mb-8 whitespace-nowrap text-center">
+          <h1 className="title-font text-6xl font-extrabold tracking-widest sm:text-6xl lg:text-8xl mb-8 whitespace-nowrap text-center">
   <span className="text-yellow-400">INNOFUSION</span>
   <span className="text-white">&nbsp;'</span>
   <span className="text-red-600">&nbsp;25</span>
