@@ -117,7 +117,7 @@ const App: React.FC = () => {
 <div className="flex items-center justify-center h-screen px-1 text-center">
   <h1 className="title-font text-2xl font-extrabold tracking-widest sm:text-4xl lg:text-8xl">
     <span className="text-yellow-400">INNOFUSION</span> <br />
-    <span className="text-white">&nbsp;' </span>
+    <span className="text-white">&nbsp;'</span>
     <span className="text-red-600">25</span>
   </h1>
 </div>
