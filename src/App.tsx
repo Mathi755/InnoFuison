@@ -391,7 +391,7 @@ className="w-full h-full object-cover"
       <div 
   id="register" 
   className="max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:px-8 bg-white"
-  style={{ backgroundImage: 'url("https://static.vecteezy.com/system/resources/previews/002/475/624/large_2x/abstract-yellow-background-free-vector.jpg")', backgroundSize: 'cover', backgroundPosition: 'center' }}
+  style={{ backgroundImage: 'url("https://th.bing.com/th/id/OIP.kdOOJkQ1LQ7pzVbkvwwuRQHaD0?w=314&h=179&c=7&r=0&o=5&dpr=1.3&pid=1.7")', backgroundSize: 'cover', backgroundPosition: 'center' }}
 >
   <div className="text-center mb-12">
     <h2 className="title-font text-3xl font-extrabold text-blue-900 sm:text-4xl">
