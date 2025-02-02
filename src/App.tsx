@@ -1,11 +1,11 @@
-import { useState, useEffect } from 'react'
+import { useState, useEffect } from 'react';
 
 function App() {
   const [timeLeft, setTimeLeft] = useState({
     days: 0,
     hours: 0,
     minutes: 0,
-    seconds: 0
+    seconds: 0,
   });
 
   useEffect(() => {
@@ -19,7 +19,7 @@ function App() {
           days: Math.floor(difference / (1000 * 60 * 60 * 24)),
           hours: Math.floor((difference / (1000 * 60 * 60)) % 24),
           minutes: Math.floor((difference / 1000 / 60) % 60),
-          seconds: Math.floor((difference / 1000) % 60)
+          seconds: Math.floor((difference / 1000) % 60),
         });
       }
     };
@@ -33,15 +33,15 @@ function App() {
       {/* Header with Logos */}
       <div className="bg-white py-4">
         <div className="max-w-7xl mx-auto px-4 flex justify-between items-center">
-          <img 
-            src="https://raw.githubusercontent.com/Mathi755/InnoFuison/main/src/assets/SRM%20Logo.jpeg" 
-            alt="SRM Logo" 
-            className="h-16" 
+          <img
+            src="https://raw.githubusercontent.com/Mathi755/InnoFuison/main/src/assets/SRM%20Logo.jpeg"
+            alt="SRM Logo"
+            className="h-16"
           />
-          <img 
-            src="https://raw.githubusercontent.com/Mathi755/InnoFuison/main/src/assets/DSBS%20Logo.png" 
-            alt="DSBS Logo" 
-            className="h-16" 
+          <img
+            src="https://raw.githubusercontent.com/Mathi755/InnoFuison/main/src/assets/DSBS%20Logo.png"
+            alt="DSBS Logo"
+            className="h-16"
           />
         </div>
       </div>
@@ -60,12 +60,10 @@ function App() {
             <span className="inline-block text-yellow-400">INNOFUSION '</span>
             <span className="inline-block text-red-600"> 25</span>
           </h1>
-
-
           <p className="mt-6 text-xl max-w-2xl mx-auto">
             Organized by DSBS STUDENT ASSOCIATION
           </p>
-          
+
           {/* Countdown Timer */}
           <div className="mt-12 grid grid-cols-4 gap-4 max-w-2xl mx-auto">
             <div className="bg-blue-800 p-4 rounded-lg">
@@ -96,34 +94,35 @@ function App() {
               <p className="text-2xl">UB - 704,705</p>
             </div>
           </div>
+
           {/* Register Now Button - Placed Below Venue */}
-<div className="mt-8 flex justify-center">
-  <a
-    href="https://docs.google.com/forms/d/e/1FAIpQLSffXFC6idN8cEcx-KoEj4vJgkOvKLA5PRc2ghzpyxd6sAFMDA/viewform"
-    target="_blank"
-    rel="noopener noreferrer"
-    className="inline-block bg-blue-600 text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-blue-700 transform hover:scale-105 transition-all duration-300"
-  >
-    Register Now
-  </a>
-</div>
+          <div className="mt-8 flex justify-center">
+            <a
+              href="https://docs.google.com/forms/d/e/1FAIpQLSffXFC6idN8cEcx-KoEj4vJgkOvKLA5PRc2ghzpyxd6sAFMDA/viewform"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-block bg-blue-600 text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-blue-700 transform hover:scale-105 transition-all duration-300"
+            >
+              Register Now
+            </a>
+          </div>
         </div>
       </div>
 
       {/* Event Poster */}
       <div className="max-w-4xl mx-auto py-16 px-4">
-        <img 
-  src="https://raw.githubusercontent.com/Mathi755/InnoFuison/main/src/assets/2.png" 
-  alt="INNOFUSION '25 Poster" 
-  className="w-full rounded-lg shadow-2xl hover:scale-105 transition-transform duration-300"
-/>
-
-
+        <img
+          src="https://raw.githubusercontent.com/Mathi755/InnoFuison/main/src/assets/2.png"
+          alt="INNOFUSION '25 Poster"
+          className="w-full rounded-lg shadow-2xl hover:scale-105 transition-transform duration-300"
+        />
       </div>
 
       {/* Objective Section */}
       <div className="max-w-7xl mx-auto py-16 px-4 bg-white rounded-lg shadow-lg my-16">
-        <h2 className="title-font text-3xl font-extrabold text-blue-900 text-center mb-8">Objective</h2>
+        <h2 className="title-font text-3xl font-extrabold text-blue-900 text-center mb-8">
+          Objective
+        </h2>
         <p className="text-lg text-center max-w-3xl mx-auto">
           To foster innovation and creativity in Artificial Intelligence among Engineering students by solving real-world problems within a competitive yet collaborative environment.
         </p>
@@ -150,9 +149,12 @@ function App() {
               "Smart Irrigation",
               "Precision Agriculture",
               "Smart Electricity",
-              "Open problem statements in SDG Goals"
+              "Open problem statements in SDG Goals",
             ].map((problem, index) => (
-              <div key={index} className="p-6 bg-white rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
+              <div
+                key={index}
+                className="p-6 bg-white rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300"
+              >
                 <p className="text-lg text-gray-800">{problem}</p>
               </div>
             ))}
@@ -160,9 +162,11 @@ function App() {
         </div>
       </div>
 
-      {/* Rules and Guidelines */}
+      {/* Rules and Guidelines + Subsequent Sections */}
       <div className="max-w-7xl mx-auto py-16 px-4 bg-white rounded-lg shadow-lg my-16">
-        <h2 className="title-font text-3xl font-extrabold text-blue-900 text-center mb-8">Rules and Guidelines</h2>
+        <h2 className="title-font text-3xl font-extrabold text-blue-900 text-center mb-8">
+          Rules and Guidelines
+        </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           <div>
             <h3 className="text-xl font-bold mb-4">Team Composition</h3>
@@ -184,87 +188,115 @@ function App() {
             </ul>
           </div>
         </div>
-      
 
-      {/* Prizes Section */}
-      <div className="bg-blue-900 text-white py-16">
-        <div className="max-w-7xl mx-auto px-4">
-          <h2 className="title-font text-3xl font-bold text-center mb-8">Prizes</h2>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div className="text-center p-6 bg-blue-800 rounded-lg transform hover:scale-105 transition-transform duration-300">
-              <h3 className="text-2xl font-bold mb-2">I PRIZE</h3>
-              <p className="text-3xl font-bold text-yellow-400">₹10,000</p>
-            </div>
-            <div className="text-center p-6 bg-blue-800 rounded-lg transform hover:scale-105 transition-transform duration-300">
-              <h3 className="text-2xl font-bold mb-2">II PRIZE</h3>
-              <p className="text-3xl font-bold text-yellow-400">₹7,000</p>
-            </div>
-            <div className="text-center p-6 bg-blue-800 rounded-lg transform hover:scale-105 transition-transform duration-300">
-              <h3 className="text-2xl font-bold mb-2">III PRIZE</h3>
-              <p className="text-3xl font-bold text-yellow-400">₹5,000</p>
+        {/* Prizes Section */}
+        <div className="bg-blue-900 text-white py-16 mt-16">
+          <div className="max-w-7xl mx-auto px-4">
+            <h2 className="title-font text-3xl font-bold text-center mb-8">Prizes</h2>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+              <div className="text-center p-6 bg-blue-800 rounded-lg transform hover:scale-105 transition-transform duration-300">
+                <h3 className="text-2xl font-bold mb-2">I PRIZE</h3>
+                <p className="text-3xl font-bold text-yellow-400">₹10,000</p>
+              </div>
+              <div className="text-center p-6 bg-blue-800 rounded-lg transform hover:scale-105 transition-transform duration-300">
+                <h3 className="text-2xl font-bold mb-2">II PRIZE</h3>
+                <p className="text-3xl font-bold text-yellow-400">₹7,000</p>
+              </div>
+              <div className="text-center p-6 bg-blue-800 rounded-lg transform hover:scale-105 transition-transform duration-300">
+                <h3 className="text-2xl font-bold mb-2">III PRIZE</h3>
+                <p className="text-3xl font-bold text-yellow-400">₹5,000</p>
+              </div>
             </div>
           </div>
         </div>
-      </div>
 
-      {/* Event Coordinators */}
-      <div className="max-w-7xl mx-auto py-16 px-4">
-        <h2 className="title-font text-3xl font-bold text-center text-blue-900 mb-12">Event Coordinators</h2>
-       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
-          {[
-            { name: "Riduvarshini M", phone: "90423 98725", image: "https://raw.githubusercontent.com/Mathi755/InnoFuison/main/src/assets/Ridu.jpg" },
-            { name: "Gomathi Nayagam S R", phone: "8610016966", image: "https://raw.githubusercontent.com/Mathi755/InnoFuison/main/src/assets/Mathi.jpg" },
-            { name: "Guru Prasaath D", phone: "63699 51331", image: "https://raw.githubusercontent.com/Mathi755/InnoFuison/main/src/assets/GP.jpg" },
-            { name: "Jonesh Linso", phone: "93456 68119", image: "https://raw.githubusercontent.com/Mathi755/InnoFuison/main/src/assets/jonesh.png" }
-          ].map((coordinator, index) => (
-            <div key={index} className="text-center group">
-              <div className="w-32 h-32 mx-auto rounded-full mb-4 overflow-hidden transform group-hover:scale-110 group-hover:-translate-y-2 transition-all duration-300 ease-in-out shadow-lg group-hover:shadow-2xl">
-                <img 
-                  src={coordinator.image} 
-                  alt={coordinator.name} 
-                  className="w-full h-full object-cover"
-                />
-              </div>
-              <h3 className="font-bold text-lg group-hover:text-blue-600 transition-colors duration-300">{coordinator.name}</h3>
-              <p className="text-gray-600">{coordinator.phone}</p>
-            </div>
-          ))}
-        </div>
-      </div>
-
-      {/* Registration Section */}
-      <div className="max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:px-8 bg-white">
-        <div className="text-center mb-12">
-          <h2 className="title-font text-3xl font-extrabold text-blue-900 sm:text-4xl">
-            Register Now
+        {/* Event Coordinators */}
+        <div className="max-w-7xl mx-auto py-16 px-4">
+          <h2 className="title-font text-3xl font-bold text-center text-blue-900 mb-12">
+            Event Coordinators
           </h2>
-          <p className="mt-4 text-sm sm:text-lg text-gray-600 mb-8">Register your team for INNOFUSION '25</p>
-
-
-          <a
-            href="https://docs.google.com/forms/d/e/1FAIpQLSffXFC6idN8cEcx-KoEj4vJgkOvKLA5PRc2ghzpyxd6sAFMDA/viewform"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-block bg-blue-600 text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-blue-700 transform hover:scale-105 transition-all duration-300"
-          >
-            Register Now
-          </a>
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
+            {[
+              {
+                name: 'Riduvarshini M',
+                phone: '90423 98725',
+                image:
+                  'https://raw.githubusercontent.com/Mathi755/InnoFuison/main/src/assets/Ridu.jpg',
+              },
+              {
+                name: 'Gomathi Nayagam S R',
+                phone: '8610016966',
+                image:
+                  'https://raw.githubusercontent.com/Mathi755/InnoFuison/main/src/assets/Mathi.jpg',
+              },
+              {
+                name: 'Guru Prasaath D',
+                phone: '63699 51331',
+                image:
+                  'https://raw.githubusercontent.com/Mathi755/InnoFuison/main/src/assets/GP.jpg',
+              },
+              {
+                name: 'Jonesh Linso',
+                phone: '93456 68119',
+                image:
+                  'https://raw.githubusercontent.com/Mathi755/InnoFuison/main/src/assets/jonesh.png',
+              },
+            ].map((coordinator, index) => (
+              <div key={index} className="text-center group">
+                <div className="w-32 h-32 mx-auto rounded-full mb-4 overflow-hidden transform group-hover:scale-110 group-hover:-translate-y-2 transition-all duration-300 ease-in-out shadow-lg group-hover:shadow-2xl">
+                  <img
+                    src={coordinator.image}
+                    alt={coordinator.name}
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+                <h3 className="font-bold text-lg group-hover:text-blue-600 transition-colors duration-300">
+                  {coordinator.name}
+                </h3>
+                <p className="text-gray-600">{coordinator.phone}</p>
+              </div>
+            ))}
+          </div>
         </div>
-      </div>
 
-      {/* Footer */}
-      <footer className="bg-blue-900 text-white">
-  <div className="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8 text-center">
-    <div className="space-y-4">
-      <h3 className="text-lg font-semibold">Contact Us</h3>
-      <p className="text-sm">Department of Data Science and Business Systems</p>
-      <p className="text-sm">SRM Institute of Science and Technology</p>
-      <p className="mt-4 text-gray-400">© 2025 DSBS Student Association. All rights reserved.</p>
+        {/* Registration Section */}
+        <div className="max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:px-8 bg-white">
+          <div className="text-center mb-12">
+            <h2 className="title-font text-3xl font-extrabold text-blue-900 sm:text-4xl">
+              Register Now
+            </h2>
+            <p className="mt-4 text-sm sm:text-lg text-gray-600 mb-8">
+              Register your team for INNOFUSION '25
+            </p>
+            <a
+              href="https://docs.google.com/forms/d/e/1FAIpQLSffXFC6idN8cEcx-KoEj4vJgkOvKLA5PRc2ghzpyxd6sAFMDA/viewform"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-block bg-blue-600 text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-blue-700 transform hover:scale-105 transition-all duration-300"
+            >
+              Register Now
+            </a>
+          </div>
+        </div>
+
+        {/* Footer */}
+        <footer className="bg-blue-900 text-white">
+          <div className="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8 text-center">
+            <div className="space-y-4">
+              <h3 className="text-lg font-semibold">Contact Us</h3>
+              <p className="text-sm">
+                Department of Data Science and Business Systems
+              </p>
+              <p className="text-sm">SRM Institute of Science and Technology</p>
+              <p className="mt-4 text-gray-400">
+                © 2025 DSBS Student Association. All rights reserved.
+              </p>
+            </div>
+          </div>
+        </footer>
+      </div>
     </div>
-  </div>
-</footer>
-    
-  )
+  );
 }
 
-export default App
+export default App;
