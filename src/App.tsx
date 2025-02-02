@@ -321,19 +321,19 @@ const App: React.FC = () => {
           Convenor
         </h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
-          {coordinators.map((coordinator, index) => (
+          {Convenors.map((Convenor, index) => (
             <div key={index} className="text-center group">
               <div className="w-32 h-32 mx-auto rounded-full mb-4 overflow-hidden transform group-hover:scale-110 group-hover:-translate-y-2 transition-all duration-300 ease-in-out shadow-lg group-hover:shadow-2xl">
                 <img
-                  src={coordinator.image}
-                  alt={coordinator.name}
+                  src={Convenor.image}
+                  alt={Convenor.name}
                   className="w-full h-full object-cover"
                 />
               </div>
               <h3 className="font-bold text-lg group-hover:text-blue-600 transition-colors duration-300">
-                {coordinator.name}
+                {Convenor.name}
               </h3>
-              <p className="text-gray-600">{coordinator.phone}</p>
+              <p className="text-gray-600">{Convenor.phone}</p>
             </div>
           ))}
         </div>
