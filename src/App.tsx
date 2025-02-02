@@ -90,7 +90,7 @@ const App: React.FC = () => {
       <div className="bg-white py-4">
   <div className="max-w-7xl mx-auto px-4 flex justify-between items-center">
     <img
-      src="https://raw.githubusercontent.com/Mathi755/InnoFuison/main/src/assets/SRM%20Logo.jpeg"
+      src="https://raw.githubusercontent.com/Mathi755/InnoFuison/main/src/assets/2dce9d04-698e-408b-b9df-4d82953465bc%20(1).png"
       alt="SRM Logo"
       className="h-16"
     />
