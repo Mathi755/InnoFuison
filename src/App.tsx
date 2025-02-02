@@ -63,31 +63,29 @@ const App: React.FC = () => {
 ];
 
  const coConvenors: coConvenor[] = [
-  {
-    name: "Dr. T. Karthick",
-    phone: "karthict@srmist.edu.in",
-    image: "https://raw.githubusercontent.com/Mathi755/InnoFuison/main/src/assets/karthik.jpg",
-    url: "https://www.srmist.edu.in/faculty/dr-t-karthick/" // URL for Dr. T. Karthick
+  { 
+    name: "Dr. T. Karthick", 
+    phone: "karthict@srmist.edu.in", 
+    image: "https://raw.githubusercontent.com/Mathi755/InnoFuison/main/src/assets/karthik.jpg" 
   },
-  {
-    name: "Dr. Jayaraj R",
-    phone: "jayarajr1@srmist.edu.in",
-    image: "https://raw.githubusercontent.com/Mathi755/InnoFuison/main/src/assets/jeyaraj.jpg",
-    url: "https://www.srmist.edu.in/faculty/dr-r-jayaraj/" // URL for Dr. Jayaraj R
+  { 
+    name: "Dr. Jayaraj R", 
+    phone: "jayarajr1@srmist.edu.in", 
+    image: "https://raw.githubusercontent.com/Mathi755/InnoFuison/main/src/assets/jeyaraj.jpg" 
   },
-  {
-    name: "Dr.J.Jeba Sonia",
-    phone: "jebas@srmist.edu.in",
-    image: "https://raw.githubusercontent.com/Mathi755/InnoFuison/main/src/assets/jeba.jpg",
-    url: "https://www.srmist.edu.in/faculty/dr-j-jeba-sonia/" // URL for Dr. J.Jeba Sonia
+  { 
+    name: "Dr.J.Jeba Sonia", 
+    phone: "jebas@srmist.edu.in", 
+    image: "https://raw.githubusercontent.com/Mathi755/InnoFuison/main/src/assets/jeba.jpg" 
   },
-  {
-    name: "Dr. R.Anita Jasmine",
-    phone: "anitajar1@srmist.edu.in",
-    image: "https://raw.githubusercontent.com/Mathi755/InnoFuison/main/src/assets/anita.jpg",
-    url: "https://www.srmist.edu.in/faculty/dr-r-anita-jasmine/" // URL for Dr. R.Anita Jasmine
+  { 
+    name: "Dr. R.Anita Jasmine", 
+    phone: "anitajar1@srmist.edu.in", 
+    image: "https://raw.githubusercontent.com/Mathi755/InnoFuison/main/src/assets/anita.jpg" 
   }
 ];
+
+
 
 
   
@@ -160,7 +158,7 @@ const App: React.FC = () => {
 <div className="bg-gradient-to-r from-blue-900 to-blue-800 text-white">
   <div className="max-w-7xl mx-auto py-16 px-4 sm:max-w-xl sm:px-6 lg:px-8 text-center">
     <h2 className="text-2xl font-bold mb-4">
-      MRS INSTITUTE OF SCIENCE AND TECHNOLOGY
+      SRM INSTITUTE OF SCIENCE AND TECHNOLOGY
       <br />
       SCHOOL OF COMPUTING
       <br />
@@ -339,34 +337,27 @@ const App: React.FC = () => {
 
    {/* coConvenors */}
 <div className="max-w-7xl mx-auto py-16 px-4 flex flex-col items-center">
-  <h2 className="title-font text-3xl font-bold text-center text-blue-900 mb-12">
+<h2 className="title-font text-3xl font-bold text-center text-blue-900 mb-12">
     Co-Convenors
-  </h2>
-  <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 justify-center">
-    {coConvenors.map((coConvenor, index) => (
-      <div
-        key={index}
-        className="text-center group flex flex-col items-center"
-        onClick={() => {
-  console.log("Redirecting to:", coConvenor.url);  // Logs the URL to console
-  window.open(coConvenor.url, "_blank");  // Open the URL in a new tab
-}}
- // Use `url` from coConvenor object
-      >
-        <div className="w-32 h-32 rounded-full mb-4 overflow-hidden transform group-hover:scale-110 group-hover:-translate-y-2 transition-all duration-300 ease-in-out shadow-lg group-hover:shadow-2xl">
-          <img
-            src={coConvenor.image}
-            alt={coConvenor.name}
-            className="w-full h-full object-cover"
-          />
-        </div>
-        <h3 className="font-bold text-lg group-hover:text-blue-600 transition-colors duration-300">
-          {coConvenor.name}
-        </h3>
-        <p className="text-gray-600">{coConvenor.phone}</p>
-      </div>
-    ))}
-  </div>
+</h2>
+<div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 justify-center">
+{coConvenors.map((coConvenor, index) => (
+<div key={index} className="text-center group flex flex-col items-center">
+<div className="w-32 h-32 rounded-full mb-4 overflow-hidden transform group-hover:scale-110 group-hover:-translate-y-2 transition-all duration-300 ease-in-out shadow-lg group-hover:shadow-2xl">
+<img
+src={coConvenor.image}
+alt={coConvenor.name}
+className="w-full h-full object-cover"
+/>
+</div>
+<h3 className="font-bold text-lg group-hover:text-blue-600 transition-colors duration-300">
+{coConvenor.name}
+</h3>
+<p className="text-gray-600">{coConvenor.phone}</p>
+</div>
+))}
+</div>
+
 </div>
 
 
