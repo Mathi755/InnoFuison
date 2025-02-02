@@ -45,7 +45,7 @@ function App() {
           />
         </div>
       </div>
-</div>
+
       {/* Hero Section with Timer */}
       <div className="bg-gradient-to-r from-blue-900 to-blue-800 text-white">
         <div className="max-w-7xl mx-auto py-16 px-4 sm:max-w-xl sm:px-6 lg:px-8 text-center">
@@ -58,7 +58,7 @@ function App() {
           </h2>
           <h1 className="title-font text-6xl font-extrabold tracking-tight sm:text-7xl lg:text-8xl mb-8">
             <span className="inline-block text-yellow-400">INNOFUSION '</span>
-            <span className="inline-block text-red-600"> 25</span>
+            <span className="inline-block text-red-600">25</span>
           </h1>
           <p className="mt-6 text-xl max-w-2xl mx-auto">
             Organized by DSBS STUDENT ASSOCIATION
@@ -95,7 +95,7 @@ function App() {
             </div>
           </div>
 
-          {/* Register Now Button - Placed Below Venue */}
+          {/* Register Now Button */}
           <div className="mt-8 flex justify-center">
             <a
               href="https://docs.google.com/forms/d/e/1FAIpQLSffXFC6idN8cEcx-KoEj4vJgkOvKLA5PRc2ghzpyxd6sAFMDA/viewform"
@@ -118,6 +118,7 @@ function App() {
         />
       </div>
 
+      {/* Rest of the sections... */}
       {/* Objective Section */}
       <div className="max-w-7xl mx-auto py-16 px-4 bg-white rounded-lg shadow-lg my-16">
         <h2 className="title-font text-3xl font-extrabold text-blue-900 text-center mb-8">
@@ -190,106 +191,102 @@ function App() {
             </ul>
           </div>
         </div>
-        </div>
+      </div>
 
-        {/* Prizes Section */}
-        <div className="bg-blue-900 text-white py-16">
-          <div className="max-w-7xl mx-auto px-4">
-            <h2 className="title-font text-3xl font-bold text-center mb-8">Prizes</h2>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-              <div className="text-center p-6 bg-blue-800 rounded-lg transform hover:scale-105 transition-transform duration-300">
-                <h3 className="text-2xl font-bold mb-2">I PRIZE</h3>
-                <p className="text-3xl font-bold text-yellow-400">₹10,000</p>
-              </div>
-              <div className="text-center p-6 bg-blue-800 rounded-lg transform hover:scale-105 transition-transform duration-300">
-                <h3 className="text-2xl font-bold mb-2">II PRIZE</h3>
-                <p className="text-3xl font-bold text-yellow-400">₹7,000</p>
-              </div>
-              <div className="text-center p-6 bg-blue-800 rounded-lg transform hover:scale-105 transition-transform duration-300">
-                <h3 className="text-2xl font-bold mb-2">III PRIZE</h3>
-                <p className="text-3xl font-bold text-yellow-400">₹5,000</p>
-              </div>
+      {/* Prizes Section */}
+      <div className="bg-blue-900 text-white py-16">
+        <div className="max-w-7xl mx-auto px-4">
+          <h2 className="title-font text-3xl font-bold text-center mb-8">Prizes</h2>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div className="text-center p-6 bg-blue-800 rounded-lg transform hover:scale-105 transition-transform duration-300">
+              <h3 className="text-2xl font-bold mb-2">I PRIZE</h3>
+              <p className="text-3xl font-bold text-yellow-400">₹10,000</p>
+            </div>
+            <div className="text-center p-6 bg-blue-800 rounded-lg transform hover:scale-105 transition-transform duration-300">
+              <h3 className="text-2xl font-bold mb-2">II PRIZE</h3>
+              <p className="text-3xl font-bold text-yellow-400">₹7,000</p>
+            </div>
+            <div className="text-center p-6 bg-blue-800 rounded-lg transform hover:scale-105 transition-transform duration-300">
+              <h3 className="text-2xl font-bold mb-2">III PRIZE</h3>
+              <p className="text-3xl font-bold text-yellow-400">₹5,000</p>
             </div>
           </div>
         </div>
+      </div>
 
-        {/* Event Coordinators */}
-        <div className="max-w-7xl mx-auto py-16 px-4">
-          <h2 className="title-font text-3xl font-bold text-center text-blue-900 mb-12">
-            Event Coordinators
-          </h2>
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
-            {[
-              {
-                name: "Riduvarshini M",
-                phone: "90423 98725",
-                image:
-                  "https://raw.githubusercontent.com/Mathi755/InnoFuison/main/src/assets/Ridu.jpg",
-              },
-              {
-                name: "Gomathi Nayagam S R",
-                phone: "8610016966",
-                image:
-                  "https://raw.githubusercontent.com/Mathi755/InnoFuison/main/src/assets/Mathi.jpg",
-              },
-              {
-                name: "Guru Prasaath D",
-                phone: "63699 51331",
-                image:
-                  "https://raw.githubusercontent.com/Mathi755/InnoFuison/main/src/assets/GP.jpg",
-              },
-              {
-                name: "Jonesh Linso",
-                phone: "93456 68119",
-                image:
-                  "https://raw.githubusercontent.com/Mathi755/InnoFuison/main/src/assets/jonesh.png",
-              },
-            ].map((coordinator, index) => (
-              <div key={index} className="text-center group">
-                <div className="w-32 h-32 mx-auto rounded-full mb-4 overflow-hidden transform group-hover:scale-110 group-hover:-translate-y-2 transition-all duration-300 ease-in-out shadow-lg group-hover:shadow-2xl">
-                  <img
-                    src={coordinator.image}
-                    alt={coordinator.name}
-                    className="w-full h-full object-cover"
-                  />
-                </div>
-                <h3 className="font-bold text-lg group-hover:text-blue-600 transition-colors duration-300">
-                  {coordinator.name}
-                </h3>
-                <p className="text-gray-600">{coordinator.phone}</p>
+      {/* Event Coordinators */}
+      <div className="max-w-7xl mx-auto py-16 px-4">
+        <h2 className="title-font text-3xl font-bold text-center text-blue-900 mb-12">
+          Event Coordinators
+        </h2>
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
+          {[
+            {
+              name: "Riduvarshini M",
+              phone: "90423 98725",
+              image: "https://raw.githubusercontent.com/Mathi755/InnoFuison/main/src/assets/Ridu.jpg",
+            },
+            {
+              name: "Gomathi Nayagam S R",
+              phone: "8610016966",
+              image: "https://raw.githubusercontent.com/Mathi755/InnoFuison/main/src/assets/Mathi.jpg",
+            },
+            {
+              name: "Guru Prasaath D",
+              phone: "63699 51331",
+              image: "https://raw.githubusercontent.com/Mathi755/InnoFuison/main/src/assets/GP.jpg",
+            },
+            {
+              name: "Jonesh Linso",
+              phone: "93456 68119",
+              image: "https://raw.githubusercontent.com/Mathi755/InnoFuison/main/src/assets/jonesh.png",
+            },
+          ].map((coordinator, index) => (
+            <div key={index} className="text-center group">
+              <div className="w-32 h-32 mx-auto rounded-full mb-4 overflow-hidden transform group-hover:scale-110 group-hover:-translate-y-2 transition-all duration-300 ease-in-out shadow-lg group-hover:shadow-2xl">
+                <img
+                  src={coordinator.image}
+                  alt={coordinator.name}
+                  className="w-full h-full object-cover"
+                />
               </div>
-            ))}
-          </div>
+              <h3 className="font-bold text-lg group-hover:text-blue-600 transition-colors duration-300">
+                {coordinator.name}
+              </h3>
+              <p className="text-gray-600">{coordinator.phone}</p>
+            </div>
+          ))}
         </div>
+      </div>
 
-        {/* Registration Section */}
-        <div className="max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:px-8 bg-white">
-          <div className="text-center mb-12">
-            <h2 className="title-font text-3xl font-extrabold text-blue-900 sm:text-4xl">
-              Register Now
-            </h2>
-            <p className="mt-4 text-sm sm:text-lg text-gray-600 mb-8">
-              Register your team for INNOFUSION '25
-            </p>
-            <a
-              href="https://docs.google.com/forms/d/e/1FAIpQLSffXFC6idN8cEcx-KoEj4vJgkOvKLA5PRc2ghzpyxd6sAFMDA/viewform"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-block bg-blue-600 text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-blue-700 transform hover:scale-105 transition-all duration-300"
-            >
-              Register Now
-            </a>
-          </div>
+      {/* Registration Section */}
+      <div className="max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:px-8 bg-white">
+        <div className="text-center mb-12">
+          <h2 className="title-font text-3xl font-extrabold text-blue-900 sm:text-4xl">
+            Register Now
+          </h2>
+          <p className="mt-4 text-sm sm:text-lg text-gray-600 mb-8">
+            Register your team for INNOFUSION '25
+          </p>
+          <a
+            href="https://docs.google.com/forms/d/e/1FAIpQLSffXFC6idN8cEcx-KoEj4vJgkOvKLA5PRc2ghzpyxd6sAFMDA/viewform"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-block bg-blue-600 text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-blue-700 transform hover:scale-105 transition-all duration-300"
+          >
+            Register Now
+          </a>
         </div>
+      </div>
 
-        {/* Footer */}
-        <footer className="bg-blue-900 text-white">
-          <div className="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8 text-center">
-            <div className="space-y-4">
-              <h3 className="text-lg font-semibold">Contact Us</h3>
-              <p className="text-sm">Department of Data Science and Business Systems</p>
-              <p className="text-sm">SRM Institute of Science and Technology</p>
-              <p className="mt-4 text-gray-400">
+      {/* Footer */}
+      <footer className="bg-blue-900 text-white">
+        <div className="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8 text-center">
+          <div className="space-y-4">
+            <h3 className="text-lg font-semibold">Contact Us</h3>
+            <p className="text-sm">Department of Data Science and Business Systems</p>
+            <p className="text-sm">SRM Institute of Science and Technology</p>
+            <p className="mt-4 text-gray-400">
                 © 2025 DSBS Student Association. All rights reserved.
               </p>
             </div>
