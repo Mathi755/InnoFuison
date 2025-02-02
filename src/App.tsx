@@ -278,30 +278,6 @@ const App: React.FC = () => {
         </div>
       </div>
 
-      {/* Event Coordinators */}
-      <div className="max-w-7xl mx-auto py-16 px-4">
-        <h2 className="title-font text-3xl font-bold text-center text-blue-900 mb-12">
-          Event Coordinators
-        </h2>
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
-          {coordinators.map((coordinator, index) => (
-            <div key={index} className="text-center group">
-              <div className="w-32 h-32 mx-auto rounded-full mb-4 overflow-hidden transform group-hover:scale-110 group-hover:-translate-y-2 transition-all duration-300 ease-in-out shadow-lg group-hover:shadow-2xl">
-                <img
-                  src={coordinator.image}
-                  alt={coordinator.name}
-                  className="w-full h-full object-cover"
-                />
-              </div>
-              <h3 className="font-bold text-lg group-hover:text-blue-600 transition-colors duration-300">
-                {coordinator.name}
-              </h3>
-              <p className="text-gray-600">{coordinator.phone}</p>
-            </div>
-          ))}
-        </div>
-      </div>
-
       {/* Convenors  */}
       <div className="max-w-7xl mx-auto py-16 px-4">
         <h2 className="title-font text-3xl font-bold text-center text-blue-900 mb-12">
@@ -326,6 +302,32 @@ const App: React.FC = () => {
         </div>
       </div>
 
+
+      {/* Event Coordinators */}
+      <div className="max-w-7xl mx-auto py-16 px-4">
+        <h2 className="title-font text-3xl font-bold text-center text-blue-900 mb-12">
+          Event Coordinators
+        </h2>
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
+          {coordinators.map((coordinator, index) => (
+            <div key={index} className="text-center group">
+              <div className="w-32 h-32 mx-auto rounded-full mb-4 overflow-hidden transform group-hover:scale-110 group-hover:-translate-y-2 transition-all duration-300 ease-in-out shadow-lg group-hover:shadow-2xl">
+                <img
+                  src={coordinator.image}
+                  alt={coordinator.name}
+                  className="w-full h-full object-cover"
+                />
+              </div>
+              <h3 className="font-bold text-lg group-hover:text-blue-600 transition-colors duration-300">
+                {coordinator.name}
+              </h3>
+              <p className="text-gray-600">{coordinator.phone}</p>
+            </div>
+          ))}
+        </div>
+      </div>
+
+      
       {/* Registration Section */}
       <div id="register" className="max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:px-8 bg-white">
         <div className="text-center mb-12">
