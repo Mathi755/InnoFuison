@@ -138,11 +138,11 @@ const App: React.FC = () => {
     <div className="min-h-screen bg-yellow-400">
       {/* Header with Logos */}
       <div className="bg-white py-4">
-  <div className="w-full h-screen">
+ <div className="w-full h-auto">
   <img
     src="https://raw.githubusercontent.com/Mathi755/InnoFuison/main/src/assets/header.png"
     alt="SRM Logo"
-    className="w-full h-full object-cover"
+    className="w-full h-auto"
   />
 </div>
 
