@@ -138,14 +138,15 @@ const App: React.FC = () => {
     <div className="min-h-screen bg-yellow-400">
       {/* Header with Logos */}
       <div className="bg-white py-4">
-  <div className="max-w-7xl mx-auto px-4 flex justify-between items-center">
-    <img
-      src="https://raw.githubusercontent.com/Mathi755/InnoFuison/main/src/assets/header.png"
-      alt="SRM Logo"
-      className="h-16"
-    />
-    
-  </div>
+  <div className="w-full h-screen">
+  <img
+    src="https://raw.githubusercontent.com/Mathi755/InnoFuison/main/src/assets/header.png"
+    alt="SRM Logo"
+    className="w-full h-full object-cover"
+  />
+</div>
+
+
 </div>
 
 
