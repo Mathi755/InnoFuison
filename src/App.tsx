@@ -68,15 +68,16 @@ const App: React.FC = () => {
     phone: "karthict@srmist.edu.in", 
     image: "https://raw.githubusercontent.com/Mathi755/InnoFuison/main/src/assets/karthik.jpg" 
   },
-  { 
-    name: "Dr. Jayaraj R", 
-    phone: "jayarajr1@srmist.edu.in", 
-    image: "https://raw.githubusercontent.com/Mathi755/InnoFuison/main/src/assets/jeyaraj.jpg" 
-  },
+  
   { 
     name: "Dr.J.Jeba Sonia", 
     phone: "jebas@srmist.edu.in", 
     image: "https://raw.githubusercontent.com/Mathi755/InnoFuison/main/src/assets/jeba.jpg" 
+  },
+   { 
+    name: "Dr. Jayaraj R", 
+    phone: "jayarajr1@srmist.edu.in", 
+    image: "https://raw.githubusercontent.com/Mathi755/InnoFuison/main/src/assets/jeyaraj.jpg" 
   },
   { 
     name: "Dr. R.Anita Jasmine", 
