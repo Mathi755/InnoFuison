@@ -159,7 +159,7 @@ const App: React.FC = () => {
 
  
   
-<h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-8xl font-bold mb-4">
+<h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-4">
   SRM INSTITUTE OF SCIENCE AND TECHNOLOGY <br />
   SCHOOL OF COMPUTING <br />
   DEPARTMENT OF DATA SCIENCE AND BUSINESS SYSTEMS
