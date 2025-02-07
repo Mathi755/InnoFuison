@@ -222,7 +222,7 @@ const App: React.FC = () => {
       {/* Event Poster */}
       <div className="max-w-4xl mx-auto py-16 px-4">
        <img
-  src="https://raw.githubusercontent.com/Mathi755/InnoFuison/main/src/assets/2.png"
+  src="https://github.com/Mathi755/InnoFuison/raw/main/src/assets/Innofusion%20Poster.png"
   alt="INNOFUSION '25 Poster"
   className="w-full rounded-lg shadow-2xl hover:scale-105 transition-transform duration-300"
 />
