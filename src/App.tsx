@@ -157,12 +157,12 @@ const App: React.FC = () => {
 <div className="bg-gradient-to-r from-blue-900 to-blue-800 text-white">
   <div className="max-w-7xl mx-auto py-16 px-4 sm:max-w-xl sm:px-6 lg:px-8 text-center">
     <h2 className="text-2xl font-bold mb-4">
-      S R M   I N S T I T U T E   O F   S C I E N C E   A N D   T E C H N O L O G Y
-      <br />
-      S C H O O L   O F   C O M P U T I N G
-      <br />
-      D E P A R T M E N T   O F   D A T A   S C I E N C E   A N D   B U S I N E S S   S Y S T E M S
-    </h2>
+  SRM INSTITUTE OF SCIENCE AND TECHNOLOGY <br />
+  SCHOOL OF COMPUTING <br />
+  DEPARTMENT OF DATA SCIENCE AND BUSINESS SYSTEMS
+</h2>
+
+
 <div className="flex flex-col items-center justify-center h-[10vh] px-4 text-center gap-y-2">   
   <h1 className="title-font text-2xl font-extrabold tracking-widest sm:text-4xl lg:text-8xl leading-tight">     
     <span className="text-yellow-400">INNOFUSION</span>       
