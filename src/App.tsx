@@ -171,11 +171,12 @@ const App: React.FC = () => {
     <span className="text-white">'</span>     
     <span className="text-red-600">25</span>   
   </h1> 
-</div>
+
 
     <p className="mt-6 text-xl max-w-2xl mx-auto">
       Organized by DSBS STUDENT ASSOCIATION
     </p>
+  </div>
 
     {/* Countdown Timer */}
     <div className="mt-12 grid grid-cols-4 gap-4 max-w-2xl mx-auto">
