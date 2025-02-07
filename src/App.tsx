@@ -139,7 +139,7 @@ const App: React.FC = () => {
   return (
     <div className="min-h-screen bg-yellow-400">
       {/* Header with Logos */}
-     <div className="py-4 flex justify-center">
+     <div className="py-2 flex justify-center">
   <div className="bg-white p-2 shadow-lg inline-block">
     <img
       src="https://raw.githubusercontent.com/Mathi755/InnoFuison/main/src/assets/header.png"
