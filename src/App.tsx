@@ -157,7 +157,7 @@ const App: React.FC = () => {
 <div className="bg-gradient-to-r from-blue-900 to-blue-800 text-white">
   <div className="max-w-7xl mx-auto py-16 px-4 sm:max-w-xl sm:px-6 lg:px-8 text-center">
 
-<div className="flex flex-col items-center justify-center h-[20vh] px-4 text-center gap-y-2"> 
+ 
   
 <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-4">
   SRM INSTITUTE OF SCIENCE AND TECHNOLOGY <br />
@@ -165,7 +165,7 @@ const App: React.FC = () => {
   DEPARTMENT OF DATA SCIENCE AND BUSINESS SYSTEMS
 </h2>
 
-
+<div className="flex flex-col items-center justify-center h-[10vh] px-4 text-center gap-y-2">
 
   <h1 className="title-font text-2xl font-extrabold tracking-widest sm:text-4xl lg:text-8xl leading-tight">     
     <span className="text-yellow-400">INNOFUSION</span>       
