@@ -155,8 +155,7 @@ const App: React.FC = () => {
 
       {/* Hero Section with Timer */}
 <div className="bg-gradient-to-r from-blue-900 to-blue-800 text-white">
-  <div className="max-w-full mx-auto py-24 px-8 sm:max-w-screen-xl sm:px-12 lg:px-16 text-center">
-  
+  <div className="max-w-full mx-auto py-24 px-8 sm:max-w-screen-xl sm:px-12 lg:px-16 text-center">  
 <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-4">
   SRM INSTITUTE OF SCIENCE AND TECHNOLOGY <br />
   SCHOOL OF COMPUTING <br />
