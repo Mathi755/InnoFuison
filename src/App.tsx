@@ -177,19 +177,19 @@ const App: React.FC = () => {
 
     {/* Countdown Timer */}
     <div className="mt-12 grid grid-cols-4 gap-4 max-w-2xl mx-auto">
-      <div className="bg-yellow-300 p-4 rounded-lg">
+      <div className="bg-blue-800 p-4 rounded-lg">
         <div className="text-4xl font-bold">{timeLeft.days}</div>
         <div className="text-sm">Days</div>
       </div>
-      <div className="bg-yellow-300 p-4 rounded-lg">
+      <div className="bg-blue-800 p-4 rounded-lg">
         <div className="text-4xl font-bold">{timeLeft.hours}</div>
         <div className="text-sm">Hours</div>
       </div>
-      <div className="bg-yellow-300 p-4 rounded-lg">
+      <div className="bg-blue-800 p-4 rounded-lg">
         <div className="text-4xl font-bold">{timeLeft.minutes}</div>
         <div className="text-sm">Minutes</div>
       </div>
-      <div className="bg-yellow-300 p-4 rounded-lg">
+      <div className="bg-blue-800 p-4 rounded-lg">
         <div className="text-4xl font-bold">{timeLeft.seconds}</div>
         <div className="text-sm">Seconds</div>
       </div>
