@@ -199,7 +199,7 @@ const App: React.FC = () => {
     <div className="mt-8 flex justify-center space-x-8">
       <div className="text-center">
         <p className="text-4xl font-bold">February</p>
-        <p className="text-2xl">17th, 2025</p>
+        <p className="text-2xl">26th, 2025</p>
       </div>
       <div className="text-center">
         <p className="text-4xl font-bold">Venue</p>
