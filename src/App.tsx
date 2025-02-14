@@ -164,9 +164,11 @@ const App: React.FC = () => {
 <p className="mt-6 text-xl max-w-2xl mx-auto">
       In association with 
     </p>
-  <h5 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-4">
+  <h5 className="text-2xl sm:text-3xl md:text-3xl lg:text-4xl font-bold mb-4 text-blue-900">
   DSBS STUDENT ASSOCIATION
 </h5>
+
+
     <br/>
 <div className="flex flex-col items-center justify-center h-[10vh] py-4 px-4 text-center gap-y-2">
 
