@@ -180,8 +180,10 @@ const App: React.FC = () => {
 </div>
 
     <div className="mt-12 grid grid-cols-1 gap-4 max-w-2xl mx-auto">
-<p>Registration ends by</p>
-      </div>
+  <p className="font-bold">Registration ends by</p>
+</div>
+
+
     {/* Countdown Timer */}
     {/* Countdown Timer */}
 <div className="mt-12 grid grid-cols-4 gap-4 max-w-2xl mx-auto">
