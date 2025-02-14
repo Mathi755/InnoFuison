@@ -172,7 +172,7 @@ const App: React.FC = () => {
 </div>
 
     <p className="mt-6 text-xl max-w-2xl mx-auto">
-      In association with DSBS STUDENT ASSOCIATION
+      In associated with DSBS STUDENT ASSOCIATION
     </p>
   
 
