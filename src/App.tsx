@@ -172,7 +172,7 @@ const App: React.FC = () => {
 </div>
 
     <p className="mt-6 text-xl max-w-2xl mx-auto">
-      Organized by DSBS STUDENT ASSOCIATION
+      In association with DSBS STUDENT ASSOCIATION
     </p>
   
 
