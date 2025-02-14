@@ -179,7 +179,7 @@ const App: React.FC = () => {
   </h1> 
 </div>
 
-    <div className="mt-12 grid grid-cols-1 gap-4 max-w-2xl mx-auto">
+    <div className="mt-8 grid grid-cols-1 gap-4 max-w-2xl mx-auto">
   <p className="font-bold">Registration ends by</p>
 </div>
 
