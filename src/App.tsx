@@ -172,9 +172,11 @@ const App: React.FC = () => {
 </div>
 
     <p className="mt-6 text-xl max-w-2xl mx-auto">
-      Organized by DSBS STUDENT ASSOCIATION
+      In association with 
     </p>
-  
+  <h3 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-4">
+  DSBS STUDENT ASSOCIATION
+</h3>
 
     {/* Countdown Timer */}
     <div className="mt-12 grid grid-cols-4 gap-4 max-w-2xl mx-auto">
@@ -223,7 +225,7 @@ const App: React.FC = () => {
       {/* Event Poster */}
       <div className="max-w-4xl mx-auto py-16 px-4">
        <img
-  src="https://github.com/Mathi755/InnoFuison/raw/main/src/assets/Innofusion%20Poster.png"
+  src="https://github.com/Mathi755/InnoFuison/raw/main/src/assets/2.png"
   alt="INNOFUSION '25 Poster"
   className="w-full rounded-lg shadow-2xl hover:scale-105 transition-transform duration-300"
 />
