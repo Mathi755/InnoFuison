@@ -184,7 +184,7 @@ const App: React.FC = () => {
     {/* Countdown Timer */}
     {/* Countdown Timer */}
 <div className="mt-12 grid grid-cols-4 gap-4 max-w-2xl mx-auto">
-  <p>Registration ends by</p>
+  <p>Registration ends by</p>     <br/>
   <div className="bg-blue-800 p-4 rounded-lg">
     <div className="text-4xl sm:text-2xl font-bold">{timeLeft.days}</div>
     <div className="text-sm sm:text-xs">Days</div>
