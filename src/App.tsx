@@ -162,8 +162,9 @@ const App: React.FC = () => {
   DEPARTMENT OF DATA SCIENCE AND BUSINESS SYSTEMS
 </h2>
 <p className="mt-6 text-xl max-w-2xl mx-auto">
-      In associated with DSBS STUDENT ASSOCIATION
+      In association with DSBS STUDENT ASSOCIATION
     </p>
+    <br>
 <div className="flex flex-col items-center justify-center h-[10vh] py-4 px-4 text-center gap-y-2">
 
   <h1 className="title-font text-2xl font-extrabold tracking-widest sm:text-4xl lg:text-8xl leading-tight">     
