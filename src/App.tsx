@@ -36,7 +36,7 @@ const App: React.FC = () => {
 
   useEffect(() => {
     const calculateTimeLeft = () => {
-      const eventDate = new Date('2025-02-24T09:00:00').getTime();
+      const eventDate = new Date('2025-02-21T09:00:00').getTime();
       const now = new Date().getTime();
       const difference = eventDate - now;
 
@@ -179,7 +179,7 @@ const App: React.FC = () => {
   </h1> 
 </div>
 
-    
+    <p>Registration ends by</p>
 
     {/* Countdown Timer */}
     {/* Countdown Timer */}
