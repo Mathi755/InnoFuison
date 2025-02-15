@@ -233,7 +233,7 @@ const App: React.FC = () => {
 
 
       {/* Event Poster */}
-      <div className="max-w-4xl mx-auto py-16 px-4">
+ {/*     <div className="max-w-4xl mx-auto py-16 px-4">
        <img
   src="https://github.com/Mathi755/InnoFuison/raw/main/src/assets/2.png"
   alt="INNOFUSION '25 Poster"
@@ -242,7 +242,7 @@ const App: React.FC = () => {
 
 
       </div>
-
+ */}
       {/* Objective Section */}
       <div className="max-w-7xl mx-auto py-16 px-4 bg-white rounded-lg shadow-lg my-16">
         <h2 className="title-font text-3xl font-extrabold text-blue-900 text-center mb-8">
