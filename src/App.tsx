@@ -222,17 +222,24 @@ const App: React.FC = () => {
       </div>
     </div>
 
-    {/* Register Now Button */}
-    <div className="mt-8 flex justify-center">
-      <a
-href="https://docs.google.com/forms/d/e/1FAIpQLSffXFC6idN8cEcx-KoEj4vJgkOvKLA5PRc2ghzpyxd6sAFMDA/viewform"
-target="_blank"
-rel="noopener noreferrer"
-className="inline-block bg-blue-600 text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-blue-700 transform hover:scale-105 transition-all duration-300"
->
-Register Now
-</a>
-    </div>
+   
+     {/* Registration Section */}
+      <div id="register1" className="max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:px-8 bg-white">
+        
+        <div className="text-center mb-12">
+       
+          <a
+            href="https://docs.google.com/forms/d/e/1FAIpQLSffXFC6idN8cEcx-KoEj4vJgkOvKLA5PRc2ghzpyxd6sAFMDA/viewform"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-block bg-blue-600 text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-blue-700 transform hover:scale-105 transition-all duration-300"
+          >
+            Register Now
+          </a>
+          
+        </div>
+
+      </div>
   </div>
 </div>
 
@@ -406,24 +413,29 @@ className="w-full h-full object-cover"
       
       {/* Registration Section */}
       <div id="register" className="max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:px-8 bg-white">
-<div className="text-center mb-12">
-<h2 className="title-font text-3xl font-extrabold text-blue-900 sm:text-4xl">
-Register Now
-</h2>
-<p className="mt-4 text-sm sm:text-lg text-gray-600 mb-8">
-Register your team for INNOFUSION &apos;25
-</p>
-<a
-href="https://docs.google.com/forms/d/e/1FAIpQLSffXFC6idN8cEcx-KoEj4vJgkOvKLA5PRc2ghzpyxd6sAFMDA/viewform"
-target="_blank"
-rel="noopener noreferrer"
-className="inline-block bg-blue-600 text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-blue-700 transform hover:scale-105 transition-all duration-300"
->
-Register Now
-</a>
-</div>
+        
+        <div className="text-center mb-12">
+          
+          <h2 className="title-font text-3xl font-extrabold text-blue-900 sm:text-4xl">
+              Register Now
+          </h2>
+          
+          <p className="mt-4 text-sm sm:text-lg text-gray-600 mb-8">
+            Register your team for INNOFUSION &apos;25
+          </p>
+          
+          <a
+            href="https://docs.google.com/forms/d/e/1FAIpQLSffXFC6idN8cEcx-KoEj4vJgkOvKLA5PRc2ghzpyxd6sAFMDA/viewform"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-block bg-blue-600 text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-blue-700 transform hover:scale-105 transition-all duration-300"
+          >
+            Register Now
+          </a>
+          
+        </div>
 
-</div>
+      </div>
 
 
 
