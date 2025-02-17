@@ -225,11 +225,13 @@ const App: React.FC = () => {
     {/* Register Now Button */}
     <div className="mt-8 flex justify-center">
       <a
-        href="#register"
-        className="inline-block bg-blue-600 text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-blue-700 transform hover:scale-105 transition-all duration-300"
-      >
-        Register Now
-      </a>
+href="https://docs.google.com/forms/d/e/1FAIpQLSffXFC6idN8cEcx-KoEj4vJgkOvKLA5PRc2ghzpyxd6sAFMDA/viewform"
+target="_blank"
+rel="noopener noreferrer"
+className="inline-block bg-blue-600 text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-blue-700 transform hover:scale-105 transition-all duration-300"
+>
+Register Now
+</a>
     </div>
   </div>
 </div>
