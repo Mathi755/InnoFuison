@@ -1,7 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import Slider from 'react-slick';
-import "slick-carousel/slick/slick.css"; 
-import "slick-carousel/slick/slick-theme.css";
+
 
 interface TimeLeft {
   days: number;
@@ -39,7 +37,7 @@ const App: React.FC = () => {
 
   useEffect(() => {
     const calculateTimeLeft = () => {
-      const eventDate = new Date('2025-02-24T09:00:00').getTime();
+      const eventDate = new Date('2025-02-22T23:59:59').getTime();
       const now = new Date().getTime();
       const difference = eventDate - now;
 
