@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from 'react';
-
+import Slider from 'react-slick';
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 interface TimeLeft {
   days: number;
@@ -137,8 +139,26 @@ const App: React.FC = () => {
     "Open problem statements in SDG Goals"
   ];
 
+  const sliderSettings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+  };
+
   return (
     <div className="min-h-screen bg-yellow-400">
+      {/* Navigation */}
+      <nav className="bg-blue-900 text-white p-4">
+  <div className="max-w-7xl mx-auto flex justify-between items-center">
+    <div className="ml-auto flex space-x-4">
+      <a href="https://dsbsstudentassociation.vercel.app/" className="text-lg font-bold">Home</a>
+      
+    </div>
+  </div>
+</nav>
+      
       {/* Header with Logos */}
      <div className="py-0 flex justify-center">
   <div className="bg-white p-2 shadow-lg inline-block">
@@ -222,9 +242,9 @@ const App: React.FC = () => {
 
    
      {/* Registration Section */}
-      <div id="register1" className="max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:px-8 bg-white">
-        
-        <div className="text-center mb-12">
+     <div id="register1" className="max-w-xs mx-auto py-4 px-4 sm:px-6 lg:px-8 bg-white rounded-md">
+
+        <div className="text-center mb-0">
        
           <a
             href="https://docs.google.com/forms/d/e/1FAIpQLSffXFC6idN8cEcx-KoEj4vJgkOvKLA5PRc2ghzpyxd6sAFMDA/viewform"
@@ -385,7 +405,7 @@ className="w-full h-full object-cover"
 
 
       {/* Event Coordinators */}
-      <div className="max-w-7xl mx-auto py-16 px-4">
+      <div id ="Contact"className="max-w-7xl mx-auto py-16 px-4">
         <h2 className="title-font text-3xl font-bold text-center text-blue-900 mb-12">
           Event Coordinators
         </h2>
